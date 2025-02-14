@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Valentine 💖</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Include the same base styles as other pages */
+    
+    .final-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .final-content {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3rem;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .final-heading {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      color: #FF1493;
+      margin-bottom: 2rem;
+    }
+
+    .heart-container {
+      margin: 2rem 0;
+    }
+
+    .big-heart {
+      font-size: 5rem;
+      color: #FF1493;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .response-buttons {
+      margin-top: 3rem;
+    }
+
+    .btn-response {
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
+      margin: 0 1rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-yes {
+      background: #FF1493;
+      color: white;
+      border: none;
+    }
+
+    .btn-yes:hover {
+      transform: scale(1.1);
+      background: #FF69B4;
+    }
+
+    .final-message {
+      font-size: 1.3rem;
+      margin: 2rem 0;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="final-page">
+    <div class="final-content">
+      <h1 class="final-heading">Will you be my Valentine?</h1>
+      
+      <div class="heart-container">
+        <i class="fas fa-heart big-heart"></i>
+      </div>
+      
+      <p class="final-message">
+        Every moment with you has been magical.<br>
+        Would you make me the happiest person by being my Valentine?
+      </p>
+      
+      <div class="response-buttons">
+        <button class="btn btn-response btn-yes">Yes! 💝</button>
+      </div>
+      
+      <div class="mt-4">
+        <p class="text-muted">With all my love,<br>Vinson</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
