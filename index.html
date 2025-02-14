@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Will You Be My Valentine? </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A special Valentine's proposal">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #FFE5F1, #FFF0F5);
+      color: #4A4A4A;
+      font-family: 'Quicksand', sans-serif;
+      padding-bottom: 70px;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #4BBC77, #4BBC77) !important;
+      padding: 1rem;
+      box-shadow: 0 2px 15px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      transform: translateY(-2px);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    .content-section {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 20px;
+      margin: 2rem 0;
+      box-shadow: 0 5px 20px rgba(255, 105, 180, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .content-section:hover {
+      transform: translateY(-5px);
+    }
+
+    .carousel-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 15px;
+    }
+
+    .carousel {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+    }
+
+    .carousel-item img {
+      height: 450px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .carousel-caption {
+      background: rgba(255, 105, 180, 0.8);
+      border-radius: 15px;
+      padding: 1rem;
+      bottom: 2rem;
+      backdrop-filter: blur(5px);
+    }
+
+    .profile-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.02);
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to right, #4BBC77, #4BBC77);
+      padding: 0.8rem 0;
+      box-shadow: 0 -2px 15px rgba(255, 105, 180, 0.3);
+      z-index: 1000;
+    }
+
+    .bottom-nav a {
+      color: white;
+      font-size: 1.5rem;
+      padding: 0 20px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .bottom-nav a:hover {
+      transform: scale(1.2) translateY(-3px);
+      color: #FFE5F1;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    h2 {
+      color: #FF1493;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.2);
+    }
+
+    .video-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+      margin: 2rem 0;
+    }
+
+    video {
+      border-radius: 20px;
+    }
+
+    .heart-icon {
+      color: #FF1493;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .quick-links a {
+      color: #FF69B4;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    .quick-links a:hover {
+      background: rgba(255, 105, 180, 0.1);
+      transform: translateX(10px);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item img {
+        height: 350px;
+      }
+      
+      .bottom-nav a {
+        padding: 0 15px;
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <nav class="navbar navbar-expand-sm navbar-dark" role="navigation">
+      <div class="container">
+       <a class="navbar-brand" href="index.html">Rawr >:( </a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarContent">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="be.html"><i class="fas fa-heart"></i> Be</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="my.html"><i class="fas fa-gift"></i> My</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="valentine.html"><i class="fas fa-kiss-wink-heart"></i> Valentine?</a>
+    </li>
+  </ul>
+</div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="carousel-container">
+    <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/love1.jpg" class="d-block w-100" alt="Love memories">
+          <div class="carousel-caption">
+            <h3> PLZZZZ </h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/love2.jpg" class="d-block w-100" alt="Precious memories">
+          <div class="carousel-caption">
+            <h3> BE MINE </h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/love3.jpg" class="d-block w-100" alt="Lovely memories">
+          <div class="carousel-caption">
+            <h3> PLZZZZ </h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </section>
+  </div>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="content-section">
+          <h2><i class="fas fa-heart heart-icon"></i> About Me</h2>
+          <img src="images/profile.jpg" alt="Profile picture" class="profile-image">
+          <p class="lead">Hi! It's me Vinz, I play Mobile legends and osu. heh... i know im cool</p>
+          <div class="quick-links">
+            <h3> Quick Links </h3>
+            <a href="#"><i class="fas fa-envelope"></i> Contact Me</a>
+            <a href="#"><i class="fas fa-heart"></i> Our Story</a>
+            <a href="#"><i class="fas fa-star"></i> Special Moments</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-8">
+        <div class="content-section">
+          <h2> Will You Be My Valentine? </h2>
+          <div class="video-container ratio ratio-16x9">
+            <video controls>
+              <source src="images/plzz.mp4" type="video/mp4">
+              Your browser doesn't support this video.
+            </video>
+          </div>
+          <p class="lead text-center mt-4">This me frl... </p>
+          
+          <div class="text-center mt-5">
+            <h3> Always Happy Being With You </h3>
+            <p class="lead"> I Literally Am Always Happy Being and Talking and Doing Stuffs With You, Thank You For Being In My Life </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bottom-nav text-center">
+    <a href="#" title="Home"><i class="fas fa-home"></i></a>
+    <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://open.spotify.com/playlist/2VEjqKRL18eAMHTp1nELsI?si=356dff971fef496f" target="_blank" rel="noopener" aria-label="Spotify">
+  <i class="fab fa-spotify"></i>
+</a>
+    <a href="#contact-section" title="Contact"><i class="fas fa-envelope"></i></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
